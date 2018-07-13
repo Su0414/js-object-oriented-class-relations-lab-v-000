@@ -39,11 +39,11 @@ class Passenger{
   }
 
   drivers(){
-
+    return store.trips.map(trip =>{
+      return trip.driver()
+    });
   }
 }
-
-
 
 class Trip{
   constructor(driver, passenger){
