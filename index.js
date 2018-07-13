@@ -39,7 +39,9 @@ class Passenger{
   }
 
   drivers(){
-
+    return store.trips.map(trip =>{
+      return trip.driver()
+    });
   }
 }
 
